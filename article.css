@@ -77,8 +77,3 @@ button{
     box-shadow: transparent;
 }
 
-
-span:hover{
-    color:yellow;
-    cursor: pointer;
-}
