@@ -2,9 +2,6 @@ body{
     background-color: #eef0f1;   
 } 
 
-article{
-    margin-bottom: 100%;
-}
 
 article.card_posts{
 background-color:white;
@@ -57,6 +54,7 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-evenly;
+
 }
 
 .reactions{
@@ -75,4 +73,12 @@ button{
     -webkit-appearance: button;
     cursor: pointer;
     border-bottom: transparent;
+    outline: none;
+    box-shadow: transparent;
+}
+
+
+span:hover{
+    color:yellow;
+    cursor: pointer;
 }

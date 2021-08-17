@@ -1,11 +1,13 @@
 @import 'nav';
 @import 'article';
+@import 'style_right';
 
 $disp: flex;
 $disp2: none;
 
 body{
-    font-family: var(--ff-sans-serif);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #e9e9e9;
 }
 
 .centro{
@@ -65,6 +67,24 @@ body{
 .medio {
     display: flex;
     flex-direction: row;
+
+    span:hover{
+        color: rgba(0,0,0,0.05);
+        cursor: pointer;
+    }
+
+    p:hover {
+        color: blue;
+        cursor: pointer;
+    }
+
+    button:hover{
+
+        background-color: gray;
+        border: gray;
+        box-shadow: rgba(0,0,0,0.05);
+        height: 100%;
+    } 
 }
 
 @mixin left_socialmedia($display) {
@@ -91,6 +111,8 @@ body{
     }
 }
 
+
+
 @mixin left_tag($display) {
     .tag {
         margin-top: 10px;
@@ -116,7 +138,9 @@ left {
 
 }
 
-@media (max-width: 736px) {
+
+
+@media (max-width: 768px) {
 
     left {
 
@@ -127,8 +151,14 @@ left {
         @include left_tag($disp2);
         background-color: rgb(201, 201, 201);
     }
+
+    .Derecho {
+        display: none;
+    }
     
+
 }
+
 
 nav  #avatar {
     border-radius: 50%;
@@ -136,4 +166,15 @@ nav  #avatar {
 
 .leftOne h3 {
     margin-left: -40px;
+}
+
+.centro button {
+    background-color: #d2d6db;
+    border-radius: 5px;
+    -webkit-appearance: button;
+    cursor: pointer;
+    border-bottom: transparent;
+    outline: none;
+    box-shadow: transparent;
+    border: 5px solid #d2d6db;
 }
