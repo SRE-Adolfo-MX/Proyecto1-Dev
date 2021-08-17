@@ -2,6 +2,10 @@ body{
     background-color: #eef0f1;   
 } 
 
+article{
+    margin-bottom: 100%;
+}
+
 article.card_posts{
 background-color:white;
 padding: 12px;

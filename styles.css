@@ -186,6 +186,10 @@ body {
   background-color: #eef0f1;
 }
 
+article {
+  margin-bottom: 100%;
+}
+
 article.card_posts {
   background-color: white;
   padding: 12px;
@@ -258,6 +262,10 @@ button {
 
 body {
   font-family: var(--ff-sans-serif);
+}
+
+.centro {
+  margin-top: 3%;
 }
 
 .medio {
